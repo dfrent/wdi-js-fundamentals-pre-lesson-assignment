@@ -28,9 +28,28 @@
 
 
 //------loops------
+//
+// var ghosts = ['inky', 'blinky', 'pinky', 'clyde'];
+//
+// for (var index = 0; index < ghosts.length; index++) {
+//   console.log('Pac-Man eats ' + ghosts[index]);
+// }
 
-var ghosts = ['inky', 'blinky', 'pinky', 'clyde'];
+// ------if conditionals--------
 
-for (var index = 0; index < ghosts.length; index++) {
-  console.log('Pac-Man eats ' + ghosts[index]);
-}
+var powerPelletEaten = false;
+var ghosts = 4;
+
+while (true) {
+ console.log('ghosts remaining:' + ghosts);
+
+ if (powerPelletEaten == false) {
+    console.log('Pac-Man eats the power pellet.');
+    powerPelletEaten = true;}
+
+  else if (ghosts > 0) {
+    console.log('Pac-Man eats a ghost.'); ghosts--;}
+     else
+     {break;}}
+
+console.log('pac-man returns home after a long day at the maze.');
