@@ -10,18 +10,27 @@
 // console.log(ghosts[3]);
 
 
-var inky = {};
-inky.color = 'cyan';
-inky.personality = 'shadow';
-console.log(inky);
+// var inky = {};
+// inky.color = 'cyan';
+// inky.personality = 'shadow';
+// console.log(inky);
+//
+// var ghosts = {inky: 'cyan', blinky: 'red', pinky: 'pink', clyde: 'orange'};
+// console.log(ghosts);
+//
+// //dot notation
+// console.log(ghosts.inky); // => 'Cyan'
+// console.log(ghosts.blinky); // => 'Red'
+//
+// //squarebracket notation --- same as above
+// console.log(ghosts['inky']); // => 'Cyan'
+// console.log(ghosts['blinky']); // => 'Red'
 
-var ghosts = {inky: 'cyan', blinky: 'red', pinky: 'pink', clyde: 'orange'};
-console.log(ghosts);
 
-//dot notation
-console.log(ghosts.inky); // => 'Cyan'
-console.log(ghosts.blinky); // => 'Red'
+//------loops------
 
-//squarebracket notation --- same as above
-console.log(ghosts['inky']); // => 'Cyan'
-console.log(ghosts['blinky']); // => 'Red'
+var ghosts = ['inky', 'blinky', 'pinky', 'clyde'];
+
+for (var index = 0; index < ghosts.length; index++) {
+  console.log('Pac-Man eats ' + ghosts[index]);
+}
