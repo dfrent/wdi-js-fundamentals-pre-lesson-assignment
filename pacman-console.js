@@ -37,19 +37,34 @@
 
 // ------if conditionals--------
 
-var powerPelletEaten = false;
-var ghosts = 4;
+// var powerPelletEaten = false;
+// var ghosts = 4;
+//
+// while (true) {
+//  console.log('ghosts remaining:' + ghosts);
+//
+//  if (powerPelletEaten == false) {
+//     console.log('Pac-Man eats the power pellet.');
+//     powerPelletEaten = true;}
+//
+//   else if (ghosts > 0) {
+//     console.log('Pac-Man eats a ghost.'); ghosts--;}
+//      else
+//      {break;}}
+//
+// console.log('pac-man returns home after a long day at the maze.');
 
-while (true) {
- console.log('ghosts remaining:' + ghosts);
+//-----switch condition-----//
 
- if (powerPelletEaten == false) {
-    console.log('Pac-Man eats the power pellet.');
-    powerPelletEaten = true;}
 
-  else if (ghosts > 0) {
-    console.log('Pac-Man eats a ghost.'); ghosts--;}
-     else
-     {break;}}
+var ghost = 'Blinky';
+var color;
 
-console.log('pac-man returns home after a long day at the maze.');
+switch (ghost) { case 'Blinky': color = 'Cyan';
+break;
+case 'Inky': color = 'pink';
+break;
+case 'Clyde': color = "Orange";
+break;}
+
+console.log(ghost + ' is the color ' + color);
