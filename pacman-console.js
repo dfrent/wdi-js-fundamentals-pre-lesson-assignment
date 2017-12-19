@@ -57,14 +57,24 @@
 //-----switch condition-----//
 
 
-var ghost = 'Blinky';
-var color;
+// var ghost = 'Blinky';
+// var color;
+//
+// switch (ghost) { case 'Blinky': color = 'Cyan';
+// break;
+// case 'Inky': color = 'pink';
+// break;
+// case 'Clyde': color = "Orange";
+// break;}
+//
+// console.log(ghost + ' is the color ' + color);
 
-switch (ghost) { case 'Blinky': color = 'Cyan';
-break;
-case 'Inky': color = 'pink';
-break;
-case 'Clyde': color = "Orange";
-break;}
 
-console.log(ghost + ' is the color ' + color);
+//---functions---
+
+function eatDot() {console.log("MUNCH!");}
+
+var eatDot = function(){ console.log("MUNCH!");}
+
+
+console.log(eatDot);
